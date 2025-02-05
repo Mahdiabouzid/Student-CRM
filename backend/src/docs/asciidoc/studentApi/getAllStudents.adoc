@@ -1,0 +1,22 @@
+include::../configs_adoc.adoc[]
+
+
+= Student API [[top]]
+
+== GET
+Returns all students back.
+
+=== Request Example
+include::{snippets}/get-all-students/http-request.adoc[]
+
+=== Response Example
+include::{snippets}/get-all-students/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/get-all-students/response-fields.adoc[]
+
+xref:studentApi.adoc[back to Student API]
+
+'''
+
+xref:../index.adoc#student_api[back to index]

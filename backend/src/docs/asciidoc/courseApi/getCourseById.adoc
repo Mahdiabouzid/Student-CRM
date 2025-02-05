@@ -1,0 +1,32 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== GET /{categoryId}
+Returns the course with the given ID.
+
+=== Request Example
+include::{snippets}/get-course/http-request.adoc[]
+
+=== Path Parameters
+include::{snippets}/get-course/path-parameters.adoc[]
+
+=== Response Example
+include::{snippets}/get-course/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/get-course/response-fields.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No course with the given Id exists
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

@@ -1,0 +1,29 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== PUT /edit/removeStudent?courseId={courseId}&studentId={studentId}
+Removes an existing student from an existing course.
+
+=== Request Example
+include::{snippets}/remove-student-from-course/http-request.adoc[]
+
+=== Query Parameters
+include::{snippets}/remove-student-from-course/query-parameters.adoc[]
+
+=== Response
+include::{snippets}/remove-student-from-course/http-response.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No course or no student with the given Id exists
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

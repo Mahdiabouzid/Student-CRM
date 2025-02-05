@@ -1,0 +1,32 @@
+include::../configs_adoc.adoc[]
+
+
+= Student API [[top]]
+
+== PUT /edit/{studentId}
+Updates an existing student with the given information.
+
+=== Request Example
+include::{snippets}/update-student/http-request.adoc[]
+
+=== Request Fields
+include::{snippets}/update-student/request-fields.adoc[]
+
+=== Response
+include::{snippets}/update-student/http-response.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 400 Bad Request | First name is too long or is blank
+| 400 Bad Request | Last name is too long or is blank
+| 400 Bad Request | The email does not have a valid format
+| 409 Conflict | A student with the same email exists already
+|===
+
+xref:studentApi.adoc[back to Student API]
+
+'''
+
+xref:../index.adoc#student_api[back to index]

@@ -1,0 +1,17 @@
+= Student CRM Application REST API Documentation
+Mahdi Abouzid;
+include::configs_adoc.adoc[]
+
+This documentation describes the REST API for the Student CRM application.
+
+The service tries to adhere as closely as possible to standard HTTP and REST conventions in its
+use of HTTP verbs and status codes.
+
+== Course API
+[[course_api]]
+The Course API is responsible for all requests regarding the courses. For more information see xref:courseApi/courseApi.adoc[Course API documentation]
+
+== Student API
+[[student_api]]
+The Student API is responsible for all requests regarding the students. For more information see xref:studentApi/studentApi.adoc[Student API documentation]
+

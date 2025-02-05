@@ -1,0 +1,30 @@
+include::../configs_adoc.adoc[]
+
+
+= Student API [[top]]
+
+== DELETE /delete/{studentId}
+Deletes the student with the given ID.
+
+=== Request Example
+include::{snippets}/delete-student/http-request.adoc[]
+
+=== Path Parameters
+include::{snippets}/delete-student/path-parameters.adoc[]
+
+=== Response
+include::{snippets}/delete-student/http-response.adoc[]
+
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No student with the given Id exists
+|===
+
+xref:studentApi.adoc[back to Student API]
+
+'''
+
+xref:../index.adoc#student_api[back to index]

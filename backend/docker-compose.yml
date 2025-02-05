@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    image: "student-crm:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/student-crm
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+
+    ports:
+      - "8081:8081"
+
+  db:
+    image: postgres:latest
+    container_name: db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=student-crm
+    ports:
+      - "5432:5432"

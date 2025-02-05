@@ -1,0 +1,30 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== PUT /edit/{courseID}
+Updates an existing course with the given information.
+
+=== Request Example
+include::{snippets}/update-course/http-request.adoc[]
+
+=== Request Fields
+include::{snippets}/update-course/request-fields.adoc[]
+
+=== Response
+include::{snippets}/update-course/http-response.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 400 Bad Request | The Course name is too long or is blank
+| 409 Conflict | A course with the same name exists already
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

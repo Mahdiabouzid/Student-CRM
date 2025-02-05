@@ -1,0 +1,30 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== DELETE /delete/{categoryId}
+Deletes the course with the given ID.
+
+=== Request Example
+include::{snippets}/delete-course/http-request.adoc[]
+
+=== Path Parameters
+include::{snippets}/delete-course/path-parameters.adoc[]
+
+=== Response
+include::{snippets}/delete-course/http-response.adoc[]
+
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No course with the given Id exists
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

@@ -1,0 +1,32 @@
+include::../configs_adoc.adoc[]
+
+
+= Student API [[top]]
+
+== GET /{studentId}
+Returns the student with the given ID.
+
+=== Request Example
+include::{snippets}/get-student/http-request.adoc[]
+
+=== Path Parameters
+include::{snippets}/get-student/path-parameters.adoc[]
+
+=== Response Example
+include::{snippets}/get-student/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/get-student/response-fields.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No student with the given Id exists
+|===
+
+xref:studentApi.adoc[back to Student API]
+
+'''
+
+xref:../index.adoc#student_api[back to index]

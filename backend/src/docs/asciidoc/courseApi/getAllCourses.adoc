@@ -1,0 +1,22 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== GET /
+Returns all courses back.
+
+=== Request Example
+include::{snippets}/get-all-courses/http-request.adoc[]
+
+=== Response Example
+include::{snippets}/get-all-courses/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/get-all-courses/response-fields.adoc[]
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

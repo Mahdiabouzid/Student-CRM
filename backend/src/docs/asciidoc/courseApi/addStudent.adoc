@@ -1,0 +1,29 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== PUT /edit/addStudent?courseId={courseId}&studentId={studentId}
+Adds an existing student to an existing course.
+
+=== Request Example
+include::{snippets}/add-student-to-course/http-request.adoc[]
+
+=== Query Parameters
+include::{snippets}/add-student-to-course/query-parameters.adoc[]
+
+=== Response
+include::{snippets}/add-student-to-course/http-response.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 404 Not Found | No course or no student with the given Id exists
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

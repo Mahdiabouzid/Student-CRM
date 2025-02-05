@@ -1,0 +1,41 @@
+include::../configs_adoc.adoc[]
+
+xref:../index.adoc#course_api[back to index]
+
+= Course API
+
+== Overview
+
+This document provides an overview of the endpoints provided by the `CourseController` class. Each endpoint is described with its path, method, request parameters, request and response bodies, and expected responses.
+
+== Resource Information
+[options="header"]
+|===
+| Base path | Response formats | Requires authentication?
+| /api/courses | JSON | No
+|===
+
+
+=== xref:getAllCourses.adoc#top[GET /]
+Returns a list of all courses.
+
+=== xref:getCourseById.adoc#top[GET /{courseId}]
+Returns the course with the given ID.
+
+=== xref:postCourse.adoc#top[POST /create]
+Creates a new course and returns it.
+
+=== xref:putCourse.adoc[PUT /edit/{courseId}]
+Updates an existing course with the given information.
+
+=== xref:addStudent.adoc[PUT /addStudent?courseId={courseId}&studentId={studentId}]
+Adds an existing student to an existing course.
+
+=== xref:removeStudent.adoc[PUT /removeStudent?courseId={courseId}&studentId={studentId}]
+Removes an existing student from an existing course.
+
+=== xref:deleteCourse.adoc#top[DELETE /delete/{courseId}]
+Deletes the course with the given ID.
+
+'''
+xref:../index.adoc#course_api[back to index]

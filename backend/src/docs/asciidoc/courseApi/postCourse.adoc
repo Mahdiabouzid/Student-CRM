@@ -1,0 +1,33 @@
+include::../configs_adoc.adoc[]
+
+
+= Course API [[top]]
+
+== POST
+Create a new course and returns it.
+
+=== Request Example
+include::{snippets}/create-course/http-request.adoc[]
+
+=== Request Fields
+include::{snippets}/create-course/request-fields.adoc[]
+
+=== Response Example
+include::{snippets}/create-course/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/create-course/response-fields.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 400 Bad Request | The Course name is too long or is blank
+| 409 Conflict | A course with the same name exists already
+|===
+
+xref:courseApi.adoc[back to Course API]
+
+'''
+
+xref:../index.adoc#course_api[back to index]

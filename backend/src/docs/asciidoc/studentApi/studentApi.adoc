@@ -1,0 +1,35 @@
+include::../configs_adoc.adoc[]
+
+xref:../index.adoc#student_api[back to index]
+
+= Student API
+
+== Overview
+
+This document provides an overview of the endpoints provided by the `StudentController` class. Each endpoint is described with its path, method, request parameters, request and response bodies, and expected responses.
+
+== Resource Information
+[options="header"]
+|===
+| Base path | Response formats | Requires authentication?
+| /api/courses | JSON | No
+|===
+
+
+=== xref:getAllStudents.adoc#top[GET /]
+Returns a list of all students.
+
+=== xref:getStudentById.adoc#top[GET /{studentId}]
+Returns the student with the given ID.
+
+=== xref:postStudent.adoc#top[POST /create]
+Creates a new student and returns it.
+
+=== xref:putStudent.adoc[PUT /edit/{studentId}]
+Updates an existing student with the given information.
+
+=== xref:deleteStudent.adoc#top[DELETE /delete/{studentId}]
+Deletes the student with the given ID.
+
+'''
+xref:../index.adoc#course_api[back to index]

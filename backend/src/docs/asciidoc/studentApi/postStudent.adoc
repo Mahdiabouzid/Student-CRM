@@ -1,0 +1,35 @@
+include::../configs_adoc.adoc[]
+
+
+= Student API [[top]]
+
+== POST
+Create a new student and returns it.
+
+=== Request Example
+include::{snippets}/create-student/http-request.adoc[]
+
+=== Request Fields
+include::{snippets}/create-student/request-fields.adoc[]
+
+=== Response Example
+include::{snippets}/create-student/response-body.adoc[]
+
+=== Response Fields
+include::{snippets}/create-student/response-fields.adoc[]
+
+=== Possible Errors
+[options="header"]
+|===
+| Error code | Description
+| 400 Bad Request | First name is too long or is blank
+| 400 Bad Request | Last name is too long or is blank
+| 400 Bad Request | The email does not have a valid format
+| 409 Conflict | A student with the same email exists already
+|===
+
+xref:studentApi.adoc[back to Student API]
+
+'''
+
+xref:../index.adoc#student_api[back to index]

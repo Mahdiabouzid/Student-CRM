@@ -1,0 +1,10 @@
+:doctype: book
+:source-highlighter: highlightjs
+:icons: font
+:toc: left
+:toclevels: 4
+:sectlinks:
+:data-uri:
+:operation-http-request-title: Example request
+:operation-request-fields-title: Request structure
+:generated-snippets: build/generated-snippets
